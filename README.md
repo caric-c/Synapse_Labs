@@ -1,4 +1,4 @@
-# Synapse Labs – Junior Cloud Engineer Role-Play Project
+# Synapse Labs 
 This project is a simulated real-world workflow where I role-play as a **Junior Cloud Engineer** working under a manager (AI-assisted).  
 The purpose is to practice **problem-solving, ticket management, and cloud operations** beyond typical student labs.
 
