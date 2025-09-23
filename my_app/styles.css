@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: #35424a;
+    color: white;
+    padding: 20px 0;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #2a2d34;  /* Dark background color for buttons */
+    border: none;
+    color: white;                /* Text color */
+    padding: 20px 0;            /* Vertical padding */
+    margin: 0px;               /* Space between buttons */
+    font-size: 16px;            /* Font size */
+    cursor: pointer;
+    width: 100px;               /* Adjust width */
+    height: 110px;               /* Adjust height */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Transition for hover effects */
+}
+
+button:hover {
+    background-color: #e8491d;   /* Change to red on hover */
+    transform: scale(1.05);       /* Slightly increase size on hover */
+}
+
+button.selected {
+    background-color: #e8491d;    /* Highlight color for selected button */
+}
+
+
+
+
