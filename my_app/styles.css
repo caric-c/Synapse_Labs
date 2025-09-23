@@ -8,6 +8,7 @@ body {
 
 header {
     background: #35424a;
+    font-size: 20px;
     color: white;
     padding: 20px 0;
 }
@@ -16,7 +17,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 button {
@@ -24,11 +25,11 @@ button {
     border: none;
     color: white;                /* Text color */
     padding: 20px 0;            /* Vertical padding */
-    margin: 0px;               /* Space between buttons */
-    font-size: 16px;            /* Font size */
+    margin: 2px;               /* Space between buttons */
+    font-size: 24px;            /* Font size */
     cursor: pointer;
-    width: 100px;               /* Adjust width */
-    height: 110px;               /* Adjust height */
+    width: 200px;               /* Adjust width */
+    height: 210px;               /* Adjust height */
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transition: background-color 0.3s ease, transform 0.3s ease;  /* Transition for hover effects */
 }
