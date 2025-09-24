@@ -46,8 +46,8 @@ jobs:
         args: --acl public-read --follow-symlinks --delete
       env:
         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }} # The name of the S3 bucket to sync to
-        AWS_ACCESS_KEY_ID: ${{ secrets.cicd_pipeline_aws_access_key_id }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.cicd_pipeline_aws_secret_access_key }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'us-east-1'   # optional: defaults to us-east-1
         SOURCE_DIR: 'website'      # optional: defaults to entire repository
 
