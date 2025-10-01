@@ -44,3 +44,8 @@ variable "deletion_protection" {
   type        = bool
   default     = true # Default value if not specified
 }
+
+variable "subnet_ids" {
+  description = "List of subnet IDs for the RDS subnet group"
+  type        = list(string)
+}
