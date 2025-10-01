@@ -54,6 +54,7 @@ resource "aws_db_instance" "postgres" {
   storage_type       = "gp3"
   backup_retention_period = 7
   deletion_protection = var.deletion_protection
+  db_subnet_group_name = aws_db_subnet_group.postgres.name
 
   vpc_security_group_ids = [var.security_group_id]
 
@@ -62,3 +63,16 @@ resource "aws_db_instance" "postgres" {
   }
 }
 
+# feedback:
+# 2. Database Subnet Group (Missing Piece):
+# RDS requires a DB Subnet Group spanning at least 2 Availability Zones for high availability.
+# Add this to your RDS module:
+
+resource "aws_db_subnet_group" "postgres" {
+  name       = "postgres-subnet-group"
+  subnet_ids = var.subnet_ids  # Should be a list of private subnet IDs
+
+  tags = {
+    Name = "PostgreSQL DB subnet group"
+  }
+}
